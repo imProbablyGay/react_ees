@@ -1,0 +1,40 @@
+
+
+.post {
+    overflow: hidden;
+}
+
+.post-enter {
+    opacity: 0;
+}
+
+.post-enter-active {
+    opacity: 1;
+    transition: .5s;
+}
+
+.post-exit {
+    opacity: 1;
+}
+
+.post-exit-active {
+    opacity: 0;
+    transition: .5s;
+}
+
+.page__current {
+    background: green;
+}
+
+.navbar {
+    width: 100vw;
+    padding: 20px;
+    background: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar__links {
+    margin-left: 10px;
+}

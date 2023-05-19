@@ -1,0 +1,14 @@
+import React from 'react'
+
+export default function Select({value, onChange, options, defaultValue}) {
+  return (
+    <select value={value} onChange={e => onChange(e.target.value)}>
+        <option disabled value={defaultValue}>{defaultValue}</option>
+        {options.map(option => 
+            <option key={option.value} value={option.value}>
+                {option.name}
+            </option>
+        )}
+      </select>
+    )
+}
